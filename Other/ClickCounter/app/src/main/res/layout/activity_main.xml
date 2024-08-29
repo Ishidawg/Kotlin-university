@@ -34,6 +34,18 @@
             android:textAlignment="center"
             android:textSize="34sp" />
 
+        <TextView
+            android:id="@+id/bonus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/memeImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
