@@ -1,6 +1,8 @@
 # Kotlin-university 📳
 Repo to deploy kotlin project made in/or for university
 
+<a href="https://laced-chatter-5ee.notion.site/ATIVIDADES-ad6bfec8671b494fafb86ece5276c48a">Notion Activities</a>
+
 **Repo functions:**
 - College ex.
 - Test softwares
