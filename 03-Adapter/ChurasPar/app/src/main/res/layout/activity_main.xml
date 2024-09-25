@@ -1,0 +1,85 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"  <!-- This is the root view ID referenced in MainActivity -->
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".MainActivity">
+
+    <!-- Men Input -->
+<EditText
+android:id="@+id/men_input"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:hint="Men"
+android:inputType="number"
+android:layout_margin="8dp"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintWidth_percent="0.8" />
+
+    <!-- Women Input -->
+<EditText
+android:id="@+id/women_input"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:hint="Women"
+android:inputType="number"
+android:layout_margin="8dp"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintTop_toBottomOf="@id/men_input"
+app:layout_constraintWidth_percent="0.8" />
+
+    <!-- Children Input -->
+<EditText
+android:id="@+id/children_input"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:hint="Children"
+android:inputType="number"
+android:layout_margin="8dp"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintTop_toBottomOf="@id/women_input"
+app:layout_constraintWidth_percent="0.8" />
+
+    <!-- Calculate Button -->
+<Button
+android:id="@+id/calculate_button"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Calculate"
+app:layout_constraintTop_toBottomOf="@id/children_input"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+android:layout_marginTop="16dp" />
+
+    <!-- Result TextView -->
+<TextView
+android:id="@+id/result_text"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Result will appear here"
+android:textSize="18sp"
+android:textColor="@color/resultColor"
+app:layout_constraintTop_toBottomOf="@id/calculate_button"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+android:layout_marginTop="16dp" />
+
+    <!-- Clean Button -->
+<Button
+android:id="@+id/clean_button"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Clean"
+app:layout_constraintTop_toBottomOf="@id/result_text"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+android:layout_marginTop="16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
